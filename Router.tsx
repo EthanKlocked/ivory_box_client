@@ -6,13 +6,15 @@ import { createDrawerNavigator } from '@react-navigation/drawer'; //setting afte
 import { 
 	Main, 
 	Login, 
-	MyPage 
+	MyPage,
+	OnBoarding
 } from '@/pages';
 
 //---------------------------- COMPONENT -------------------------------
 export type RootStackParamList = {
 	Main: undefined;
 	Login: { itemId: number; otherParam?: string };
+	OnBoarding: undefined;
 	MyPage: undefined;
 };
 
@@ -23,6 +25,7 @@ export default () => {
 		<NavigationContainer>
 			<Stack.Navigator initialRouteName="Main">
 				<Stack.Screen name="Main" component={Main} />
+				<Stack.Screen name="OnBoarding" component={OnBoarding} />
 				<Stack.Screen name="Login" component={Login} />
 				<Stack.Screen name="MyPage" component={MyPage} />
 			</Stack.Navigator>			

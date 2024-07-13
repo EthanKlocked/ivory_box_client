@@ -7,8 +7,6 @@
 //------------------------------ MODULE --------------------------------
 import React from 'react';
 import { RecoilRoot } from 'recoil';
-import { Main } from '@/pages';
-import { Test } from '@/components';
 import Router from './Router';
 
 //---------------------------- COMPONENT -------------------------------

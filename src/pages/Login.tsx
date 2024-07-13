@@ -5,13 +5,14 @@ import {
 	Text
 } from 'react-native';
 import styled from '@emotion/native';
+import { APP_TITLE } from '@/config/auth';
 
 //---------------------------- COMPONENT -------------------------------
 const Login = () => {
 	return (
 		<Container>
 			<View>
-				<Title>test</Title>
+				<Title>{APP_TITLE}</Title>
 			</View>
 		</Container>
 	);

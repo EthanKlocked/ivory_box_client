@@ -28,6 +28,10 @@ const Main = ({ navigation }: Props) => {
         			title="Go to Login"
         			onPress={() => navigation.navigate('Login', { itemId: 86 })}
       			/>
+				<Button
+        			title="Go to OnBoarding"
+        			onPress={() => navigation.navigate('OnBoarding')}
+      			/>
 			</View>
 		</Container>
 	);
